@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio ⚡</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #08090d;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 242, 254, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(112, 0, 255, 0.15) 0%, transparent 40%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: rgba(21, 28, 44, 0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Header Section */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .avatar-placeholder {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+      margin: 0 auto 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      color: #94a3b8;
+      font-size: 16px;
+    }
+
+    /* Bio / About Section */
+    .section-card {
+      background: rgba(11, 15, 25, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      color: #00f2fe;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .bio-text {
+      color: #cbd5e0;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .project-card-link {
+      text-decoration: none;
+      display: block;
+    }
+
+    .project-card {
+      background: #0d1117;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: #00f2fe;
+    }
+
+    .project-card h3 {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      font-size: 13px;
+      color: #8b949e;
+      line-height: 1.4;
+    }
+
+    /* Social Links */
+    .links-container {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .btn-link {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 14px;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-link:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="avatar-placeholder">💻</div>
+      <h1>Sam</h1>
+      <p class="tagline">Developer • Creator • Speedrunner</p>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="section-card">
+      <div class="section-title">🚀 About Me</div>
+      <p class="bio-text">
+         I'm a passionate developer with a love for creating innovative solutions and building amazing experiences.
+         Coding is not just my profession, it's my playground where I turn ideas into reality. I thrive on challenges and enjoy collaborating with like-minded individuals to bring projects to life.
+         I don't wanna yap but this is my portfolio, check out my micro-projects below and feel free to connect with me on social media!
+      </p>
+    </div>
+
+    <!-- Micro-Projects Section -->
+    <div class="section-card">
+      <div class="section-title">⚡ Micro-Projects</div>
+      <div class="projects-grid">
+        
+        <a href=" https://sam-official-yt-ig.github.io/work-hour-calculator/" class="project-card-link" target="_blank">
+          <div class="project-card">
+            <h3>💸 Work-Hour Calculator</h3>
+            <p>Converts product prices into the exact work hours and minutes required to afford them.</p>
+          </div>
+        </a>
+
+        <a href=" https://sam-official-yt-ig.github.io/vibe-check-and-roast/" class="project-card-link" target="_blank">
+          <div class="project-card">
+            <h3>🎭 Vibe Check Tool</h3>
+            <p>Generates instant aesthetic vibe ratings and roasts based on user handles.</p>
+          </div>
+        </a>
+
+        <a href=" https://sam-official-yt-ig.github.io/duo-habit-calculator/"class="project-card-link" target="_blank">
+          <div class="project-card">
+            <h3>⚡ Duo-Habit Tracker</h3>
+            <p>Gamified streak tracker supporting multi-player daily and custom time quests.</p>
+          </div>
+        </a>
+
+        <a href=" https://sam-official-yt-ig.github.io/bio-builder/" class="project-card-link" target="_blank">
+          <div class="project-card">
+            <h3>🎨 Bio Link Builder</h3>
+            <p>Portable glassmorphic link-in-bio tool designed for high-impact social profiles.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Social & Connect Section -->
+    <div class="section-card">
+      <div class="section-title">🌐 Connect</div>
+      <div class="links-container">
+        <a href="https://www.instagram.com/sam_creates_official?cplk=dW5uNmVoOgswYXlp" class="btn-link">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCs927e6QEF6AFq7S1xAR_kw" class="btn-link">YouTube</a>
+        <a href="https://github.com/Sam-official-yt-ig" class="btn-link">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
